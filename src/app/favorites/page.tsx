@@ -1,13 +1,18 @@
+import type { Metadata } from "next";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { SiteHeader } from "@/components/SiteHeader";
 import { CategoryNav } from "@/components/CategoryNav";
-import { Hero } from "@/components/Hero";
-import { FeaturedCategories } from "@/components/FeaturedCategories";
-import { WeeklyFavorites } from "@/components/WeeklyFavorites";
-import { Curations } from "@/components/Curations";
+import { FavoritesView } from "@/components/FavoritesView";
 import { SiteFooter } from "@/components/SiteFooter";
+import { FAVORITE_PRODUCTS } from "@/lib/favorites-data";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "En Sevilenler | Hipicon",
+  description:
+    "Hipicon'da en çok favorilenen tasarım ürünleri — küratör ve tasarımcıların en beğenilen parçalarını keşfet.",
+};
+
+export default function FavoritesPage() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <header className="sticky top-0 z-50 bg-white">
@@ -16,10 +21,7 @@ export default function Home() {
         <CategoryNav />
       </header>
       <main className="flex-1">
-        <Hero />
-        <FeaturedCategories />
-        <WeeklyFavorites />
-        <Curations />
+        <FavoritesView products={FAVORITE_PRODUCTS} />
       </main>
       <SiteFooter />
     </div>
