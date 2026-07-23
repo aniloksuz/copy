@@ -3,6 +3,7 @@ import type {
   HeroSlide,
   NavItem,
   Product,
+  Selection,
 } from "@/types/home";
 
 export const NAV_ITEMS: NavItem[] = [
@@ -34,7 +35,7 @@ export const HERO_RIGHT = {
 };
 
 export const FEATURED_CATEGORIES: FeaturedCategory[] = [
-  { label: "En Sevilenler", href: "/search?sortByFavorite=desc", image: "/images/categories/en-sevilenler.jpg" },
+  { label: "En Sevilenler", href: "/favorites", image: "/images/categories/en-sevilenler.jpg" },
   { label: "İndirimdekiler", href: "/indirim", image: "/images/categories/indirimdekiler.jpg" },
   { label: "Bardak & Fincan & Kupa", href: "/ev/mutfak-sofra/bardak-fincan-kupa", image: "/images/categories/bardak-fincan-kupa.jpg" },
   { label: "Duvar Aydınlatmaları", href: "/ev/aydinlatma/duvar-aydinlatma-modelleri", image: "/images/categories/duvar-aydinlatmalari.jpg" },
@@ -46,6 +47,13 @@ export const FEATURED_CATEGORIES: FeaturedCategory[] = [
   { label: "Spor & Hobi", href: "/yasam/outdoor/spor-hobi", image: "/images/categories/spor-hobi.jpg" },
   { label: "Omuz Çantası", href: "/kadin/canta/omuz-cantasi", image: "/images/categories/omuz-cantasi.jpg" },
   { label: "Tavan Aydınlatmaları", href: "/ev/aydinlatma/tavan-aydinlatmalari-sarkit-lambalar", image: "/images/categories/tavan-aydinlatmalari.jpg" },
+];
+
+export const SELECTIONS: Selection[] = [
+  { number: 1, label: "Dingin Çalışma Alanları", href: "/collection/dingin-calisma/505", image: "/images/selections/dingin-calisma.jpg" },
+  { number: 2, label: "Krom Aşkına!", href: "/collection/krom-askina/781", image: "/images/selections/krom-askina.jpg" },
+  { number: 3, label: "Rengarenk & Enerjik Hediyeler", href: "/collection/rengarenk-enerjik-hediyeler/760", image: "/images/selections/rengarenk-hediyeler.jpg" },
+  { number: 4, label: "Hasır Parçalar", href: "/collection/hasir-parcalar/618", image: "/images/selections/hasir-parcalar.jpg" },
 ];
 
 export const WEEKLY_FAVORITES: Product[] = [
