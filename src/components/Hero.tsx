@@ -20,12 +20,12 @@ export function Hero() {
             <p className="text-lg font-medium text-[#1c1c1c]">{slide.subtitle}</p>
           </div>
           <div className="flex flex-col gap-1 bg-[#b3a069] p-7 text-[#1c1c1c]">
-            <p className="mb-1 text-2xl font-extrabold">İNDİRİM KUPONU!</p>
-            <p className="text-lg font-bold leading-snug">40.000 TL&apos;ye 3.500 TL</p>
-            <p className="text-lg font-bold leading-snug">15.000 TL&apos;ye 1.100 TL</p>
-            <p className="text-lg font-bold leading-snug">7.500 TL&apos;ye 500 TL</p>
+            <p className="mb-1 text-2xl font-extrabold">İLK ALIŞVERİŞİNE</p>
+            <p className="text-lg font-bold leading-snug">25.000 TL&apos;ye 5.000 TL</p>
+            <p className="text-lg font-bold leading-snug">15.000 TL&apos;ye 2.500 TL</p>
+            <p className="text-lg font-bold leading-snug">7.500 TL&apos;ye 1000 TL</p>
             <p className="mt-2 text-xs text-[#3a3524]">
-              Kampanya, 20 Temmuz - 04 Ağustos tarihleri arasında geçerlidir.
+              Kampanya, 14 Ağustos - 31 Ağustos tarihleri arasında geçerlidir.
             </p>
           </div>
         </Link>
