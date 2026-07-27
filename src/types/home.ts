@@ -46,8 +46,8 @@ export interface MegaMenuItem {
 }
 
 export interface MegaMenuGroup {
-  heading: string;
-  href: string;
+  heading?: string;
+  href?: string;
   items: MegaMenuItem[];
 }
 

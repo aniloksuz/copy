@@ -3,6 +3,70 @@ import type { MegaMenuColumn } from "@/types/home";
 // Category mega-menus keyed by the nav item's href.
 // Each entry is an array of visual columns; a column may stack multiple groups.
 export const MEGA_MENUS: Record<string, MegaMenuColumn[]> = {
+  "/salon": [
+    [
+      {
+        items: [
+          { label: "TV Üniteleri", href: "/salon/tv-uniteleri" },
+          { label: "Konsol ve Büfeler", href: "/salon/konsol-ve-bufeler" },
+          { label: "Vitrin Dolapları", href: "/salon/vitrin-dolaplari" },
+          { label: "Kitaplıklar", href: "/salon/kitapliklar" },
+          { label: "Duvar ve Depolama Dolapları", href: "/salon/duvar-ve-depolama-dolaplari" },
+          { label: "Bar ve Kahve Dolapları", href: "/salon/bar-ve-kahve-dolaplari" },
+          { label: "Seperatör Üniteleri", href: "/salon/seperator-uniteleri" },
+          { label: "Özel Tasarım Salon Dolapları", href: "/salon/ozel-tasarim-salon-dolaplari" },
+        ],
+      },
+    ],
+  ],
+  "/mutfak": [
+    [
+      {
+        items: [
+          { label: "Mutfak Dolapları", href: "/mutfak/mutfak-dolaplari" },
+          { label: "Boy Dolapları", href: "/mutfak/boy-dolaplari" },
+          { label: "Kiler Dolapları", href: "/mutfak/kiler-dolaplari" },
+          { label: "Ada ve Yarımada Üniteleri", href: "/mutfak/ada-ve-yarimada-uniteleri" },
+          { label: "Tezgâh Üstü Dolapları", href: "/mutfak/tezgah-ustu-dolaplari" },
+          { label: "Kahve Köşesi Dolapları", href: "/mutfak/kahve-kosesi-dolaplari" },
+          { label: "Ankastre Üniteleri", href: "/mutfak/ankastre-uniteleri" },
+          { label: "Özel Tasarım Mutfak Dolapları", href: "/mutfak/ozel-tasarim-mutfak-dolaplari" },
+        ],
+      },
+    ],
+  ],
+  "/yatak-odasi": [
+    [
+      {
+        items: [
+          { label: "Gardıroplar", href: "/yatak-odasi/gardiroplar" },
+          { label: "Giyinme Odaları", href: "/yatak-odasi/giyinme-odalari" },
+          { label: "Komodinler", href: "/yatak-odasi/komodinler" },
+          { label: "Şifonyerler", href: "/yatak-odasi/sifonyerler" },
+          { label: "Makyaj Masaları", href: "/yatak-odasi/makyaj-masalari" },
+          { label: "Başlık ve Karyola Üniteleri", href: "/yatak-odasi/baslik-ve-karyola-uniteleri" },
+          { label: "Duvar ve Depolama Dolapları", href: "/yatak-odasi/duvar-ve-depolama-dolaplari" },
+          { label: "Özel Tasarım Yatak Odası Dolapları", href: "/yatak-odasi/ozel-tasarim-yatak-odasi-dolaplari" },
+        ],
+      },
+    ],
+  ],
+  "/banyo": [
+    [
+      {
+        items: [
+          { label: "Lavabo Altı Dolapları", href: "/banyo/lavabo-alti-dolaplari" },
+          { label: "Boy Dolapları", href: "/banyo/boy-dolaplari" },
+          { label: "Aynalı Dolaplar", href: "/banyo/aynali-dolaplar" },
+          { label: "Çamaşır Makinesi Dolapları", href: "/banyo/camasir-makinesi-dolaplari" },
+          { label: "Havlu ve Depolama Dolapları", href: "/banyo/havlu-ve-depolama-dolaplari" },
+          { label: "Duvar ve Niş Dolapları", href: "/banyo/duvar-ve-nis-dolaplari" },
+          { label: "Tezgâh Üstü Üniteler", href: "/banyo/tezgah-ustu-uniteler" },
+          { label: "Özel Tasarım Banyo Dolapları", href: "/banyo/ozel-tasarim-banyo-dolaplari" },
+        ],
+      },
+    ],
+  ],
   "/ev": [
     [
       {

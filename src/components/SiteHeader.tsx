@@ -1,12 +1,19 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Search, User, ShoppingBasket } from "lucide-react";
-import { HipiconLogo } from "@/components/icons";
 
 export function SiteHeader() {
   return (
     <div className="mx-auto flex w-full max-w-[1400px] items-center gap-4 px-4 py-4 lg:gap-8 lg:px-8">
-      <Link href="/" aria-label="Hipicon" className="shrink-0 text-hip-ink">
-        <HipiconLogo className="h-auto w-24 lg:w-36" />
+      <Link href="/" aria-label="Artı Mobilya" className="shrink-0">
+        <Image
+          src="/images/logo/arti-mobilya.png"
+          alt="Artı Mobilya"
+          width={64}
+          height={64}
+          priority
+          className="h-12 w-12 object-contain lg:h-16 lg:w-16"
+        />
       </Link>
 
       <div className="relative flex-1">

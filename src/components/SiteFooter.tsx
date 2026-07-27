@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { HipiconLogo } from "@/components/icons";
 import {
   FOOTER_CATEGORIES,
   POPULAR_DESIGNERS,
@@ -111,9 +111,13 @@ export function SiteFooter() {
       {/* Link columns */}
       <div className="mx-auto grid w-full max-w-[1400px] gap-8 border-t border-hip-line px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
-          <div className="text-hip-ink">
-            <HipiconLogo className="h-auto w-32" />
-          </div>
+          <Image
+            src="/images/logo/arti-mobilya.png"
+            alt="Artı Mobilya"
+            width={80}
+            height={80}
+            className="h-20 w-20 object-contain"
+          />
         </div>
         {FOOTER_LINKS.map((col) => (
           <div key={col.title}>

@@ -7,16 +7,10 @@ import type {
 } from "@/types/home";
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Ev", href: "/ev" },
-  { label: "Sanat", href: "/sanat" },
-  { label: "Takı", href: "/taki" },
-  { label: "Kadın", href: "/kadin" },
-  { label: "Erkek", href: "/erkek" },
-  { label: "Yaşam", href: "/yasam" },
-  { label: "Ofis", href: "/ofis" },
-  { label: "Teknoloji", href: "/teknoloji" },
-  { label: "Çocuk", href: "/cocuk" },
-  { label: "İndirim", href: "/indirim", highlight: true },
+  { label: "Salon", href: "/salon" },
+  { label: "Mutfak", href: "/mutfak" },
+  { label: "Yatak Odası", href: "/yatak-odasi" },
+  { label: "Banyo", href: "/banyo" },
 ];
 
 export const HERO_SLIDES: HeroSlide[] = [
