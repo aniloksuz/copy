@@ -176,3 +176,35 @@ export const MEGA_MENUS: Record<string, MegaMenuColumn[]> = {
     ],
   ],
 };
+
+/** Find a menu item's display label by its href (group heading or sub-item). */
+export function getMenuItemLabel(href: string): string | undefined {
+  for (const columns of Object.values(MEGA_MENUS)) {
+    for (const column of columns) {
+      for (const group of column) {
+        if (group.href === href) return group.heading;
+        const item = group.items.find((i) => i.href === href);
+        if (item) return item.label;
+      }
+    }
+  }
+  return undefined;
+}
+
+/** All `{ category, subcategory }` pairs present in the mega-menus. */
+export function allSubcategoryParams(): { category: string; subcategory: string }[] {
+  const out: { category: string; subcategory: string }[] = [];
+  for (const columns of Object.values(MEGA_MENUS)) {
+    for (const column of columns) {
+      for (const group of column) {
+        for (const item of group.items) {
+          const parts = item.href.split("/").filter(Boolean);
+          if (parts.length === 2) {
+            out.push({ category: parts[0], subcategory: parts[1] });
+          }
+        }
+      }
+    }
+  }
+  return out;
+}

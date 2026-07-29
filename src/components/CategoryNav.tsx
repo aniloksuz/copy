@@ -72,7 +72,7 @@ export function CategoryNav() {
       {/* Mega-menu dropdown */}
       {activeMenu && (
         <div
-          className="absolute top-full z-40 hidden lg:block"
+          className="absolute top-full z-40 block"
           style={{ left: menuLeft }}
         >
           <div className="flex gap-12 rounded-b-2xl border border-t-0 border-hip-line bg-white px-8 py-7 shadow-[0_16px_32px_-12px_rgba(0,0,0,0.15)]">

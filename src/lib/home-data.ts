@@ -17,7 +17,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   {
     title: "GÜNEŞLİ GÜNLER RAHAT STİLLER",
     subtitle: "Kadın, erkek, çocuk kategorilerinde",
-    image: "/images/hero/hero-main.jpg",
+    image: "/images/hero/image_2026-07-30_6981.jpg",
     href: "/kadin",
   },
 ];

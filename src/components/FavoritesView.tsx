@@ -21,7 +21,15 @@ function parsePrice(price: string): number {
   );
 }
 
-export function FavoritesView({ products }: { products: Product[] }) {
+export function FavoritesView({
+  products,
+  title,
+  count = PRODUCT_COUNT,
+}: {
+  products: Product[];
+  title?: string;
+  count?: string;
+}) {
   const [sort, setSort] = useState<SortOption>(DEFAULT_SORT);
   const [sortOpen, setSortOpen] = useState(false);
   const [onlyDiscounted, setOnlyDiscounted] = useState(false);
@@ -50,9 +58,18 @@ export function FavoritesView({ products }: { products: Product[] }) {
 
   return (
     <div className="mx-auto w-full max-w-[1400px] px-4 pb-12 lg:px-8">
-      <p className="py-6 text-center text-sm font-semibold text-hip-muted">
-        {PRODUCT_COUNT}
-      </p>
+      {title ? (
+        <div className="pt-6 pb-2 text-center">
+          <h1 className="text-2xl font-extrabold text-hip-ink lg:text-3xl">
+            {title}
+          </h1>
+          <p className="mt-1 text-sm font-semibold text-hip-muted">{count}</p>
+        </div>
+      ) : (
+        <p className="py-6 text-center text-sm font-semibold text-hip-muted">
+          {count}
+        </p>
+      )}
 
       {/* Toolbar */}
       <div className="flex items-center justify-between gap-3 border-y border-hip-line py-4">
